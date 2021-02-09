@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html{
+    box-sizing: border-box; 
+}
+
+body{
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    /* Spacing between letters */
+    letter-spacing: 5px;
+}
+
+.loader{
+    /* We don't want loader to move even if user scrolls */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* For loader, make background opaque */
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Targetting img which is a child of class loader */
+.loader img{
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    /* top and left aligns wrt to top left corner, but we want center to be in middle so we shit it by 50% to top and left */
+    transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container{
+    /* top bottom 10, left right 30% */
+    margin: 10px 30%; 
+}
+
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+
+    .image-container{
+        margin: ;
+    }
+}
